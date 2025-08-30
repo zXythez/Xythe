@@ -82,5 +82,12 @@
 
   <footer class="wrap footer">© <span id="y"></span> Xythe — all crimes (digital) reserved.</footer>
   <script>document.getElementById('y').textContent = new Date().getFullYear()</script>
+<script>
+  const btn = document.querySelector('.menu-btn');
+  const links = document.querySelector('.links');
+  btn.addEventListener('click', () => {
+    links.classList.toggle('show');
+  });
+</script>
 </body>
 </html>

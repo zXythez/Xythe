@@ -16,3 +16,46 @@ body{margin:0;background:var(--bg);color:white;font-family:system-ui,Segoe UI,Ro
 .section h2{margin:0 0 14px 0}
 .footer{border-top:1px solid #2a2a2a;margin-top:40px;padding:16px 0;color:#aaa;font-size:14px}
 a{color:#9ae6ff}
+/* Nav base */
+.nav {
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding-top:12px;
+}
+
+/* Burger button hidden on desktop */
+.menu-btn {
+  display:none;
+  font-size:24px;
+  cursor:pointer;
+}
+
+/* Links on desktop */
+.links {
+  display:flex;
+  gap:14px;
+}
+
+/* Mobile mode */
+@media (max-width:640px) {
+  .menu-btn {
+    display:block;
+  }
+  .links {
+    display:none;          /* hidden by default */
+    flex-direction:column;
+    background:#121212;
+    position:absolute;
+    top:60px;
+    right:20px;
+    padding:10px;
+    border-radius:10px;
+  }
+  .links.show {
+    display:flex;          /* visible when toggled */
+  }
+  .links a {
+    padding:8px;
+  }
+}

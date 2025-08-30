@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Test Page • Xythe</title>
+  <link rel="stylesheet" href="/style.css" />
+</head>
+<body>
+  <nav class="wrap" style="display:flex;justify-content:space-between;align-items:center;padding-top:12px">
+    <strong><a href="/">Xythe</a></strong>
+    <div style="display:flex;gap:14px">
+      <a href="/">Home</a>
+      <a href="/test.html">Test Page</a>
+    </div>
+  </nav>
+
+  <main class="wrap">
+    <header class="hero">
+      <h1 class="title">This is a Test Page ⚡</h1>
+      <p class="sub">If you see this styled correctly, your multi-page setup works.</p>
+    </header>
+
+    <section class="section">
+      <div class="card"><div class="pad">
+        <p>Congrats, you just created your first extra page. <br>
+        <a href="/">← Back to Home</a></p>
+      </div></div>
+    </section>
+  </main>
+
+  <footer class="wrap footer">© <span id="y"></span> Xythe — all crimes (digital) reserved.</footer>
+  <script>document.getElementById('y').textContent = new Date().getFullYear()</script>
+</body>
+</html>
